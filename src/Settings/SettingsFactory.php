@@ -54,6 +54,10 @@ class SettingsFactory
 
         $configDirectory = $configDirectory ?? getcwd();
 
+        if (($configDirectory == '/') || (strpos($configDirectory,'/cgi-bin/') !== false)) {
+            return '';
+        }
+        
         while (@is_dir($configDirectory)) {
             foreach ($configNames as $configName) {
                 $configFullPath = $configDirectory.DIRECTORY_SEPARATOR.$configName;
