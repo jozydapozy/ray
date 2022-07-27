@@ -13,21 +13,21 @@ We assume you have completed the [installation](/docs/ray/v1/installation-in-you
 
 To display something in Ray use the `ray()` function. It accepts everything: strings, arrays, objects, ... you name it.
 
-- [Framework agnostic PHP](#framework-agnostic-php)
-  - [Updating a Ray instance](#updating-a-ray-instance)
-- [Laravel](#laravel)
-  - [Macros &amp; Blade](#macros--blade)
-- [Wordpress](#wordpress)
-- [Yii](#yii)
-- [Craft](#craft)
-  - [Twig](#twig)
-- [JavaScript](#javascript)
-- [NodeJS](#nodejs)
-- [Vue](#vue)
-- [Go](#go)
-- [AlpineJS](#alpinejs)
-  - [Updating a Ray instance](#updating-a-ray-instance-1)
-- [Bash](#bash)
+- [Framework agnostic PHP](#content-framework-agnostic-php)
+  - [Updating a Ray instance](#content-updating-a-ray-instance)
+- [Laravel](#content-laravel)
+  - [Macros &amp; Blade](#content-macros--blade)
+- [Wordpress](#content-wordpress)
+- [Yii](#content-yii)
+- [Craft](#content-craft)
+  - [Twig](#content-twig)
+- [JavaScript](#content-javascript)
+- [NodeJS](#content-nodejs)
+- [Vue](#content-vue)
+- [Go](#content-go)
+- [AlpineJS](#content-alpinejs)
+  - [Updating a Ray instance](#content-updating-a-ray-instance-1)
+- [Bash](#content-bash)
 
 ## Framework agnostic PHP
 
@@ -192,7 +192,7 @@ Read more on [Craft](/docs/ray/v1/usage/craft)
 | `ray(variable)` | Display a string, array or object |
 | `ray(variable, another, …)` | Ray accepts multiple arguments |
 | `ray(…).blue()` | Output in color. Use `green`, `orange`, `red`, `blue`,`purple` or `gray` |
-| `ray()->caller()` | Discover where code is being called |
+| `ray().caller()` | Discover where code is being called |
 | `ray().clearScreen()` | Clear current screen |
 | `ray().clearAll()` | Clear current and all previous screens |
 | `ray().count(name)` | Count how many times a piece of code is called, with optional name |
@@ -232,7 +232,7 @@ Read more on [Craft](/docs/ray/v1/usage/craft)
 | `ray(…).small()` | Output text smaller or bigger. Use `large` or `small`|
 | `ray().stopTime(name)` | Removes a named stopwatch if specified, otherwise removes all stopwatches |
 | `ray().table(…)` | Display an array of items or an object formatted as a table; Objects and arrays are pretty-printed |
-| `ray()->trace()` | Check entire backtrace |
+| `ray().trace()` | Check entire backtrace |
 | `ray().xml(string)` | Send XML to Ray |
 
 ## NodeJS
@@ -242,7 +242,7 @@ Read more on [Craft](/docs/ray/v1/usage/craft)
 | `ray(variable)` | Display a string, array or object |
 | `ray(variable, another, …)` | Ray accepts multiple arguments |
 | `ray(…).blue()` | Output in color. Use `green`, `orange`, `red`, `blue`,`purple` or `gray` |
-| `ray()->caller()` | Discover where code is being called |
+| `ray().caller()` | Discover where code is being called |
 | `ray().clearScreen()` | Clear current screen |
 | `ray().clearAll()` | Clear current and all previous screens |
 | `ray().count(name)` | Count how many times a piece of code is called, with optional name |
@@ -282,7 +282,7 @@ Read more on [Craft](/docs/ray/v1/usage/craft)
 | `ray(…).small()` | Output text smaller or bigger. Use `large` or `small`|
 | `ray().stopTime(name)` | Removes a named stopwatch if specified, otherwise removes all stopwatches |
 | `ray().table(…)` | Display an array of items or an object formatted as a table; Objects and arrays are pretty-printed |
-| `ray()->trace()` | Check entire backtrace |
+| `ray().trace()` | Check entire backtrace |
 | `ray().xml(string)` | Send XML to Ray |
 
 ## Vue
